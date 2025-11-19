@@ -1,0 +1,6 @@
+{
+  "title": "API not loading",
+  "description": "GET request returns 500",
+  "priority": "high",
+  "status": "open"
+}
