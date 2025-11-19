@@ -1,0 +1,7 @@
+jest.mock("axios");
+
+test("fetches and displays bugs", async () => {
+  axios.get.mockResolvedValue({ data: [{ title: "Bug 1" }] });
+  render(<BugList />);
+  expect(await screen.findByText("Bug 1")).toBeInTheDocument();
+});
